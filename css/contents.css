@@ -11,3 +11,35 @@ max-width: 30rem;
 margin: 0 auto;
 padding: 0 2rem;
 }
+
+/*tooltip*/
+.cp_tooltip {
+	display: inline-block;
+}
+.cp_tooltiptext {
+	position: relative;
+	cursor: pointer;
+	/*background: linear-gradient(transparent 60%, #00b734 60%);*/
+  color:green;
+}
+.cp_tooltiptext::after {
+	position: absolute;
+	transition: all 0.3s ease 0s;
+	opacity: 0;
+	top: 0px;/*HOVERのスタート位置*/
+	left: 0px;
+	display: block;
+	padding: 0.2em 0.5em;
+	content: attr(data-tooltip);
+	white-space: nowrap;
+	color: #ffffff;
+	border-radius: 6px;
+	background: #1b2538;
+}
+.cp_tooltiptext:hover::after {
+	top: 26px;/*HOVER位置*/
+	opacity: 1;
+}
+
+/* <div class="cp_tooltip">This is a <span data-tooltip="tip-tip!!" class="cp_tooltiptext">Tooltip</span> here.</div> */
+/*tooltip*/
