@@ -3,16 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 body.contents {
-  /*font-family:'Inconsolata';*/
-  font-family: 'Source Code Pro', monospace;
+  font-family:'Inconsolata';
+  /*font-family: 'Source Code Pro', monospace;*/
   background-color: #111111;
   }
 .fh{
-  font-family: 'Source Code Pro', monospace;
+  /*font-family: 'Source Code Pro', monospace;*/
+  font-family:'Inconsolata';
 }
 
 .container {
-max-width: 30rem;
+max-width: 32rem;
 margin: 0 auto;
 padding: 0 2rem;
 }
@@ -47,54 +48,6 @@ padding: 0 2rem;
 }
 /* <div class="cp_tooltip">This is a <span data-tooltip="tip-tip!!" class="cp_tooltiptext">Tooltip</span> here.</div> */
 /*tooltip*/
-
-/*navigation*/
-
-nav ul{
-　display: table;
-　margin: 0 auto;
-　padding: 0;
-　width: 80%;
-　text-align: center;
-}
-nav ul li{
-　display: table-cell;
-　min-width: 50px;
-　position: relative;
-}
-nav ul li:not(:first-child):after{
-　position: absolute;
-　content: ‘/’;
-　top: 30%;
-　left: 0;
-}
-nav ul li a{
-　display: block;
-　width: 100%;
-　padding: 10px 0;
-　text-decoration: none;
-　color: #ccc;
-　font-weight: bold;
-}
-nav ul li.current a{
-　color: #A77B1C;
-}
-nav ul li a:hover{
-　color: #C55859;
-}
-/*navigation*/
-
-/*
-<nav>
-　<ul>
-　　<li class=”current”><a href=”#”>Home</a></li>
-　　<li><a href=”#”>News</a></li>
-　　<li><a href=”#”>About</a></li>
-　　<li><a href=”#”>Access</a></li>
-　　<li><a href=”#”>Blog</a></li>
-　</ul>
-</nav>
-*/
 
 
 a:link{ color:mediumseagreen }
